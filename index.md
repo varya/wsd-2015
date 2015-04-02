@@ -39,7 +39,6 @@ style: |
 ![](pictures/cover.jpg)
 <!-- photo by John Carey, fiftyfootshadows.net -->
 
-
 ## Shower Key Features
 
 1. Built on HTML, CSS and vanilla JavaScript
@@ -57,6 +56,9 @@ Shower ['ʃəuə] noun. A person or thing that shows.
 Lorem ipsum dolor sit amet, consectetur [adipisicing](#all-kind-of-lists) elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, *quis nostrud* exercitation ullamco laboris **nisi ut aliquip** ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in `<culpa>` qui officia deserunt mollit anim id est laborum.
 
 ## All Kind of Lists
+
+### Test here
+{: .subtitle }
 
 1. Simple lists are marked with bullets
 2. Ordered lists begin with a number
