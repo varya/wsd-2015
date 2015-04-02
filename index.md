@@ -1,6 +1,6 @@
 ---
 
-layout: ribbon
+layout: sc5
 
 style: |
 
