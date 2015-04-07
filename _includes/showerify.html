@@ -40,7 +40,20 @@
                     {% assign newslide = newslide | replace_first:'><strong>','>' %}
                     {% assign newslide = newslide | replace_first:'</strong></h2>','</h2>' %}
                 {% endif %}
-                {% capture showerify_middle %}{{ showerify_middle }}{{ newslide }}{% endcapture %}
+
+                {%if newslide contains '<h3 class="subtitle"' %}
+                {% capture sub_header %}{{ newslide | split:'</h3>' | first | split: '</h2>' | last | replace:'h3','em' }}{% endcapture %}
+                {% endif %}
+                {% if sub_header %}
+                    {% capture sub_header %}{{ sub_header }}</em>{% endcapture %}
+                {% endif %}
+
+                {% capture slide_title %}{{ newslide | split:'</h2>' | first }}{% endcapture %}
+                {% capture slide_title %}{{ slide_title }}{{ sub_header }}{% endcapture %}
+
+                {% capture slide_content %}{{ newslide | split:'</h2' | last }}{% endcapture %}
+
+                {% capture showerify_middle %}{{ showerify_middle }}{{ slide_title }}</h2{{ slide_content }}{% endcapture %}
             {% endif %}
         {% endfor %}
         {% capture showerify_middle %}{{ showerify_middle }}</div></section>{% endcapture %}
