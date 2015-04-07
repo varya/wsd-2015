@@ -41,8 +41,9 @@
                     {% assign newslide = newslide | replace_first:'</strong></h2>','</h2>' %}
                 {% endif %}
 
+                {% capture sub_header %}{% endcapture %}
                 {%if newslide contains '<h3 class="subtitle"' %}
-                {% capture sub_header %}{{ newslide | split:'</h3>' | first | split: '</h2>' | last | replace:'h3','em' }}{% endcapture %}
+                    {% capture sub_header %}{{ newslide | split:'</h3>' | first | split: '</h2>' | last | replace:'h3','em' }}{% endcapture %}
                 {% endif %}
                 {% if sub_header %}
                     {% capture sub_header %}{{ sub_header }}</em>{% endcapture %}
