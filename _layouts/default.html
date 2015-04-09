@@ -21,5 +21,13 @@
     {% if progress %}<div class="progress"><div></div></div>{% endif %}
     <script src="shower/shower.min.js"></script>
     <!-- Copyright © {{ site.time | date: "%Y" }} {{ author_name }}{% if author_url != '' %} — {{ author_url }}{% endif %}{% if company_name != '' %}, {{ company_name }}{% if company_url != '' %} — {{ company_url }}{% endif %}{% endif %} -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.2.0/trianglify.min.js"></script>
+    <script>
+        var pattern = Trianglify({
+            width: 1024,
+            height: 640
+        });
+        document.getElementById('Cover').appendChild(pattern.canvas());
+    </script>
 </body>
 </html>
