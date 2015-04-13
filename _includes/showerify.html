@@ -53,6 +53,7 @@
                 {% capture slide_title %}{{ slide_title }}{{ sub_header }}{% endcapture %}
 
                 {% capture slide_content %}{{ newslide | split:'</h2' | last }}{% endcapture %}
+                {% capture slide_content %}><div class="slide__body"{{ slide_content}}</div>{% endcapture %}
 
                 {% capture showerify_middle %}{{ showerify_middle }}{{ slide_title }}</h2{{ slide_content }}{% endcapture %}
             {% endif %}
