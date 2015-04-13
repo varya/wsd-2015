@@ -52,6 +52,26 @@ style: |
     <object class="main-logo" data="themes/sc5/images/logo.min.svg#white" type="image/svg+xml"></object>
 </div>
 
+## Varya Stepanova
+{: .varya }
+
+Frontend developer at [SC5 Online](http://sc5.io), Helsinki<br/>
+Long-running projects, UI libraries, **style-guide-driven development**<br/>
+[@varya_en](https://twitter.com/varya_en)
+
+<style>
+.varya .slide__body
+{
+  margin-top: 5em;
+}
+.varya a
+{
+  text-decoration: none;
+  color: currentColor;
+  background: none;
+}
+</style>
+
 ## Shower Key Features
 
 1. Built on HTML, CSS and vanilla JavaScript
