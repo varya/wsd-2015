@@ -48,3 +48,26 @@ valid question."
 
 "I think the more automated you get and the more integrated into your workflow the style guide becomes, the more useful
 it will be — and it can actually be quite fun."
+
+http://www.smashingmagazine.com/2015/03/05/automating-style-guide-driven-development/
+
+"even with the clear benefits, taking the necessary steps to create and start using them is easier said than done, as
+quite often the challenge is cultural, requiring changes in people’s mindsets"
+
+"make the transition as painless as possible"
+
+"design lacks consitency"
+
+"old-school process is prone to error"
+
+“Process changes are much more profound than the technology that enables them.”
+– John Albin Wilkins
+
+"Being able to see each component in every possible state helps to ensure that everything is visually correct and that
+all the necessary states are present."
+
+"Having each component displayed separately suits the idea of modular development perfectly and encourages the creation
+of independent building blocks for the interface."
+
+Refactoring: "any change affecting the components and their states can be easily checked visually, decreasing the chance
+of something breaking accidentally"
