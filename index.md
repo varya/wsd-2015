@@ -72,6 +72,29 @@ Long-running projects, UI libraries, **style-guide-driven development**<br/>
 }
 </style>
 
+## The art of cleaning up
+{: .cover .systematic }
+
+![](pictures/systematic2.jpg)
+
+<!--
+About keeping things in order.
+About programming lazyness.
+About not driving a stick.
+About robots should work and people should not.
+About organizing things for a better life.
+About fly lady.
+-->
+
+<style>
+
+.systematic.slide h2 {
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+</style>
+
 ## Shower Key Features
 
 1. Built on HTML, CSS and vanilla JavaScript
