@@ -9,6 +9,7 @@
    - Examples of styleguide
      - GitHub
    - challenges:
+     - easy to start
      - keep the documentation up-to date
      - keep the markup for the component up-to-date<br/>
        This is why we have Angular directives feature
