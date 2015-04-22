@@ -462,16 +462,16 @@ or any other modular solution
 
 </style>
 
-## Living Styleguides
+## Living Style Guides
 
-A <b>living styleguide</b> represents UI components of your website with exact the same styles
+A <b>living style guide</b> represents UI components of your website with exactly the same styles
 which you use across the project.
 
-## Styleguide Driven Development
+## Style-Guide-Driven Development
 
-Styleguide <s>can</s> must be an integral part of your development workflow.
+Style-Guide <s>can</s> must be an integral part of your development workflow.
 
-<b>Styleguide Driven Development</b> is the practise of using the styleguide as the focal point for all front-end UI
+<b>Style-Guide-Driven Development</b> is the practice of using the style guide as the focal point for all front-end UI
 development tasks.
 
 ## The tool we missed
@@ -494,15 +494,15 @@ development tasks.
 
 ## Easy to keep up to date
 
-* Living styleguide
-* Documentaion in code
-* Supports angular directives
+* Living style guide
+* Documentation in code
+* Supports Angular directives
 
-## Use as development playgroud
+## Use as development playground
 
 * Related variables and styles
 * Variable-component mapping
-* Live editting
+* Live editing
 * Watching and auto-refreshing
 
 ## Bridges the gap
@@ -510,7 +510,7 @@ development tasks.
 * Designer/developer communication
 * Cross-team communication
 * Communication for remote teams
-* Cross-company design consistence
+* Cross-company design consistency
 
 ## Cross-company style guide process
 {: .cross-company }
@@ -526,7 +526,7 @@ development tasks.
 }
 </style>
 
-## Development with Styleguide Generator by SC5
+## Development with Style Guide Generator by SC5
 
 * Living overview of UI
 * Quick manual testing
@@ -543,7 +543,7 @@ development tasks.
 What markup, CSS and JS I need?
 
 ### After
-What modules is this page made of? Do I need to create new modules? **Future modules and pages start in styleguide**.
+What modules is this page made of? Do I need to create new modules? **Future modules and pages start in style guide**.
 
 <style>
 .mindset h3 {
