@@ -25,7 +25,9 @@
     <script>
         var pattern = Trianglify({
             width: 1024,
-            height: 640
+            height: 640,
+            x_colors: 'Paired',
+            y_colors: 'match_x'
         });
         document.getElementById('Cover').appendChild(pattern.canvas());
     </script>
