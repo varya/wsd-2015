@@ -55,11 +55,25 @@ style: |
 ## Varya Stepanova
 {: .varya }
 
+<div class="photo"></div>
+
 Frontend developer at [SC5 Online](http://sc5.io), Helsinki<br/>
 Long-running projects, UI libraries, **style-guide-driven development**<br/>
-[@varya_en](https://twitter.com/varya_en)
+[@varya_en](https://twitter.com/varya_en){: .twitter }
 
 <style>
+.varya .photo {
+  background-image:url('pictures/varya.jpg');
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-position: top right;
+  border: #999 solid 5px;
+  float: left;
+  margin-top: -2em;
+  margin-right: 2em;
+  background-size: 100%;
+}
 .varya .slide__body
 {
   margin-top: 5em;
@@ -70,12 +84,18 @@ Long-running projects, UI libraries, **style-guide-driven development**<br/>
   color: currentColor;
   background: none;
 }
+.varya .twitter::before
+{
+  content: "";
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-image:url('pictures/twitter-logo.png');
+  background-size: cover;
+  margin-right: 0.5em;
+  margin-bottom: -0.5em;
+}
 </style>
-
-## The art of cleaning up
-{: .cover .systematic }
-
-![](pictures/systematic2.jpg)
 
 <!--
 About keeping things in order.
@@ -95,9 +115,8 @@ About fly lady.
 
 </style>
 
-## Component-based approach
-{: .shout }
-<!-- TODO: change the title -->
+## Cleaning up the process
+{: .chapter }
 
 ## Old school way
 {: .cycle }
@@ -163,13 +182,12 @@ product
   display: inline-block;
 }
 .cycle .state::after {
-  content: "";
+  content: "\2192";
   display: inline-block;
-  width: 0;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-left: 50px solid #ff9d00;
-  border-bottom: 25px solid transparent;
+  margin-top: 0.25em;
+  margin-right: 0.125em;
+  color: #31727d;
+  line-height: 1em;
   position: absolute;
   right: -32px;
   top: calc(50% - 25px);
@@ -187,7 +205,7 @@ product
 <div class="stage" style="width:200px">markup</div>
 <div class="stage">integration</div>
 
-<div class="next" markdown="1">
+<div class="next reality" markdown="1">
 ### In reality
 <div class="stage" style="width:300px;">mockup</div>
 <div class="stage stage_cross" style="margin-left: 50px">markup</div>
@@ -213,14 +231,21 @@ product
   position: relative;
   z-index: 20;
   background-image:
-    -webkit-radial-gradient(center center, ellipse cover, red 0, red 10px, transparent 10px),
-    linear-gradient(to bottom, transparent calc(100% - 12.5px), red calc(100% - 12.5px), red calc(100% - 7.5px),
+    -webkit-radial-gradient(center center, ellipse cover, #31727d 0, #31727d 10px, transparent 10px),
+    linear-gradient(to bottom, transparent calc(100% - 12.5px), #31727d calc(100% - 12.5px), #31727d calc(100% - 7.5px),
     transparent calc(100% - 7.5px)),
-    -webkit-radial-gradient(center center, ellipse cover, red 0, red 10px, transparent 10px);
+    -webkit-radial-gradient(center center, ellipse cover, #31727d 0, #31727d 10px, transparent 10px);
   background-repeat: no-repeat, no-repeat;
   background-position: 0 100%, 10px 0, 100% 100%;
   background-size: 20px 20px, 100% 100%, 20px 20px;
   padding: 0 1.5em 0.5em;
+}
+.dash-process .reality .stage {
+  background-image:
+    -webkit-radial-gradient(center center, ellipse cover, #ef4942 0, #ef4942 10px, transparent 10px),
+    linear-gradient(to bottom, transparent calc(100% - 12.5px), #ef4942 calc(100% - 12.5px), #ef4942 calc(100% - 7.5px),
+    transparent calc(100% - 7.5px)),
+    -webkit-radial-gradient(center center, ellipse cover, #ef4942 0, #ef4942 10px, transparent 10px);
 }
 .dash-process .stage_cross::after {
   content: "";
@@ -293,21 +318,125 @@ product
 or any other modular solution
 {: .note }
 
-## Modular CSS architecture
+## Modular CSS process
+{: .component-cycle }
 
-<!-- TODO: Draw component development cycles -->
+<div class="components">
+<div class="component">
+</div>
+<div class="component component_2">
+</div>
+<div class="component component_3">
+</div>
+</div>
 
-## Living Styleguides
+<style>
+.component-cycle .components {
+  display: flex;
+  margin-top: 4em;
+}
+.component-cycle .component {
+  position: relative;
+  width: 33%;
+  height: 200px;
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 2em;
+}
+.component-cycle .components .component:nth-child(1) {
+  order: 1;
+}
 
-A <b>living styleguide</b> represents UI components of your website with exact the same styles
-which you use across the project.
+.component-cycle .components .component:nth-child(2) {
+  order: 2;
+}
 
-## Styleguide Driven Development
+.component-cycle .components .component:nth-child(3) {
+  order: 3;
+}
+.component-cycle .component::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -100px;
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: #999 5px solid;
+  display: inline-block;
+  background-image:
+    -webkit-radial-gradient(center center, ellipse cover, transparent 70px, #31727d 70px, #31727d 75px, transparent 75px),
+    -webkit-radial-gradient(center center, ellipse cover, #31727d 0, #31727d 10px, transparent 10px),
+    -webkit-radial-gradient(center center, ellipse cover, #31727d 0, #31727d 10px, transparent 10px),
+    -webkit-radial-gradient(center center, ellipse cover, #31727d 0, #31727d 10px, transparent 10px);
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-position:
+    center center,
+    160px 100px,
+    60px 155px,
+    30px 50px;
+  background-size:
+    100% 100%,
+    20px 20px,
+    20px 20px,
+    20px 20px;
+}
 
-Styleguide <s>can</s> must be an integral part of your development workflow.
+.component-cycle .component_2::before {
+  margin-left: -90px;
+  width: 180px;
+  height: 180px;
+  background-image:
+    -webkit-radial-gradient(center center, ellipse cover, transparent 60px, #f16b66 60px, #f16b66 65px, transparent 65px),
+    -webkit-radial-gradient(center center, ellipse cover, #f16b66 0, #f16b66 10px, transparent 10px),
+    -webkit-radial-gradient(center center, ellipse cover, #f16b66 0, #f16b66 10px, transparent 10px),
+    -webkit-radial-gradient(center center, ellipse cover, #f16b66 0, #f16b66 10px, transparent 10px);
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-position:
+    center center,
+    130px 45px,
+    90px 140px,
+    25px 55px;
+  background-size:
+    100% 100%,
+    20px 20px,
+    20px 20px,
+    20px 20px;
+}
+.component-cycle .component_3::before {
+  background-image:
+    -webkit-radial-gradient(center center, ellipse cover, transparent 70px, #564c5b 70px, #564c5b 75px, transparent 75px),
+    -webkit-radial-gradient(center center, ellipse cover, #564c5b 0, #564c5b 10px, transparent 10px),
+    -webkit-radial-gradient(center center, ellipse cover, #564c5b 0, #564c5b 10px, transparent 10px),
+    -webkit-radial-gradient(center center, ellipse cover, #564c5b 0, #564c5b 10px, transparent 10px);
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-position:
+    center center,
+    150px 130px,
+    40px 140px,
+    75px 20px;
+  background-size:
+    100% 100%,
+    20px 20px,
+    20px 20px,
+    20px 20px;
+}
 
-<b>Styleguide Driven Development</b> is the practise of using the styleguide as the focal point for all front-end UI
-development tasks.
+</style>
 
 ## Getting out of your comfort zone
 {: .challenge }
@@ -321,6 +450,18 @@ development tasks.
 }
 
 </style>
+
+## Living Styleguides
+
+A <b>living styleguide</b> represents UI components of your website with exact the same styles
+which you use across the project.
+
+## Styleguide Driven Development
+
+Styleguide <s>can</s> must be an integral part of your development workflow.
+
+<b>Styleguide Driven Development</b> is the practise of using the styleguide as the focal point for all front-end UI
+development tasks.
 
 ## The tool we missed
 {: .tool }
@@ -343,7 +484,7 @@ development tasks.
 ## Easy to keep up to date
 
 * Living styleguide
-* Documenttaion in code
+* Documentaion in code
 * Supports angular directives
 
 ## Use as development playgroud
@@ -355,9 +496,24 @@ development tasks.
 
 ## Bridges the gap
 
-* design/developer communication
-* cross-team communication
-* communication for remote teams
+* Designer/developer communication
+* Cross-team communication
+* Communication for remote teams
+* Cross-company design consistence
+
+## Cross-company style guide process
+{: .cross-company }
+
+![](pictures/pattern-library-process.png){: .picture }
+
+<style>
+.cross-company {
+  text-align: center;
+}
+.cross-company .picture {
+  height: 350px;
+}
+</style>
 
 ## Development with Styleguide Generator by SC5
 
@@ -387,12 +543,30 @@ What modules is this page made of? Do I need to create new modules? **Future mod
 ## Thank you!
 {: .thanks }
 
-Varya Stepanova, SC5 Online
+Varya Stepanova, SC5 Online<br/>
+[@varya_en](https://twitter.com/varya_en){: .twitter }
 
-### Questions?
+### [varya.me/empirejs-2015](http://varya.me/empirejs-2015/)
 
 <style>
 .thanks h3 {
-  font-size: 100px;
+  font-size: 3em;
+}
+.thanks .twitter
+{
+  text-decoration: none;
+  color: currentColor;
+  background: none;
+}
+.thanks .twitter::before
+{
+  content: "";
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-image:url('pictures/twitter-logo.png');
+  background-size: cover;
+  margin-right: 0.5em;
+  margin-bottom: -0.5em;
 }
 </style>
