@@ -68,9 +68,10 @@ style: |
 
 <div class="photo"></div>
 
-Frontend developer at [SC5 Online](http://sc5.io), Helsinki<br/>
-Long-running projects, UI libraries, **style-guide-driven development**<br/>
+Frontend developer at [SC5](http://sc5.io), Helsinki<br/>
 [@varya_en](https://twitter.com/varya_en){: .twitter }
+
+Long-running projects, UI libraries, **style-guide-driven development**
 
 <style>
 .varya .photo {
@@ -500,10 +501,10 @@ development tasks.
 
 ## Use as development playground
 
+* Watching and auto-refreshing
 * Related variables and styles
 * Variable-component mapping
 * Live editing
-* Watching and auto-refreshing
 
 ## Bridges the gap
 
@@ -532,8 +533,8 @@ development tasks.
 * Quick manual testing
 * Quick built-out of new pages
 * Unit tests for UI
-* Device-wall friendly
-* <b>Easier designer/developer/client collaboration</b>
+* Easier designer/developer/client collaboration
+* <b>"Style-guide-driven" mindset</b>
 
 ## Developers mindset
 {: .mindset }
@@ -543,7 +544,8 @@ development tasks.
 What markup, CSS and JS I need?
 
 ### After
-What modules is this page made of? Do I need to create new modules? **Future modules and pages start in style guide**.
+What modules is this page made of? Do I need to create new modules?<br/>
+**Future modules and pages start in style guide**.
 
 <style>
 .mindset h3 {
