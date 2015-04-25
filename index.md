@@ -71,7 +71,8 @@ style: |
 Frontend developer at [SC5](http://sc5.io), Helsinki<br/>
 [@varya_en](https://twitter.com/varya_en){: .twitter }
 
-Long-running projects, UI libraries, **style-guide-driven development**
+Long-running projects, UI libraries,<br/>
+**style-guide-driven development**
 
 <style>
 .varya .photo {
@@ -220,8 +221,9 @@ product
 <div class="next reality" markdown="1">
 ### In reality
 <div class="stage" style="width:300px;">mockup</div>
-<div class="stage stage_cross" style="margin-left: 50px">markup</div>
+<div class="stage" style="margin-left: 50px">markup</div>
 <div class="next">
+  <div class="stage stage_cross stage_invisible" style="position: absolute; left: 520px; top: 370px">markup</div>
   <div class="stage" style="margin-left: 500px;width:150px">mockup</div>
   <div class="stage" style="position: absolute; width: 175px">markup</div>
 <br/>
@@ -275,6 +277,11 @@ product
     #000 10px,
     #000 20px
     );
+}
+.dash-process .stage_invisible {
+  background: none;
+  color: transparent;
+  background-size: 0 0, 0 0, 0 0;
 }
 </style>
 
@@ -506,17 +513,14 @@ development tasks.
 * Variable-component mapping
 * Live editing
 
-## Bridges the gap
-
-* Designer/developer communication
-* Cross-team communication
-* Communication for remote teams
-* Cross-company design consistency
-
 ## Cross-company style guide process
 {: .cross-company }
 
+### 25% faster to develop something
+{: .subtitle }
+
 ![](pictures/pattern-library-process.png){: .picture }
+
 
 <style>
 .cross-company {
@@ -527,7 +531,7 @@ development tasks.
 }
 </style>
 
-## Development with Style Guide Generator by SC5
+## Style Guide Generator by SC5
 
 * Living overview of UI
 * Quick manual testing
@@ -535,6 +539,13 @@ development tasks.
 * Unit tests for UI
 * Easier designer/developer/client collaboration
 * <b>"Style-guide-driven" mindset</b>
+
+## Bridges the gap
+
+* Designer/developer communication
+* Cross-team communication
+* Communication for remote teams
+* Cross-company design consistency
 
 ## Developers mindset
 {: .mindset }
