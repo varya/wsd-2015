@@ -44,7 +44,7 @@ style: |
 ---
 
 
-# Driving <nobr>Style-Guide-Driven</nobr> Development {#Cover}
+# Automating <nobr>Style-Guide-Driven</nobr> Development {#Cover}
 
 <div class="main-logo__wrapper">
     <object class="main-logo" data="themes/sc5/images/logo.min.svg#white" type="image/svg+xml"></object>
