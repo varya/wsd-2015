@@ -532,20 +532,59 @@ development tasks.
 </style>
 
 ## Style Guide Generator by SC5
+{: .benefits }
 
 * Living overview of UI
 * Quick manual testing
 * Quick built-out of new pages
 * Unit tests for UI
-* Easier designer/developer/client collaboration
-* <b>"Style-guide-driven" mindset</b>
-
-## Bridges the gap
-
-* Designer/developer communication
+* {: .unit-4 } Cross-company design consistency
 * Cross-team communication
 * Communication for remote teams
-* Cross-company design consistency
+* {: .unit-2 } Bridges the gap
+* {: .main } <b>"Style-guide-driven" mindset</b>
+
+<style>
+.benefits ul {
+    position: relative;
+}
+.benefits .unit-4 {
+    position: absolute;
+    top: 3em;
+    left: 500px;
+    color: #f16b66;
+}
+.benefits .unit-4::before {
+    content: "}";
+    margin-right: 0.5em;
+    font-size: 6.5em;
+    position: absolute;
+    top: -0.07em;
+    left: -0.5em;
+    width: auto;
+    color: #999;
+}
+.benefits .unit-2 {
+    position: absolute;
+    top: 9em;
+    left: 500px;
+    color: #f16b66;
+}
+.benefits .unit-2::before {
+    content: "}";
+    margin-right: 0.5em;
+    font-size: 3.5em;
+    position: absolute;
+    font-weight: 800;
+    top: -0.07em;
+    left: -1em;
+    width: auto;
+    color: #999;
+}
+.benefits .main {
+    color: #f16b66;
+}
+</style>
 
 ## Developers mindset
 {: .mindset }
