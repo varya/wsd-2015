@@ -218,19 +218,13 @@ Then, the pre-given kit of UI components is good for build-out new pages. We do 
 
 The unit test for UI, eirther functional Protractor and so on, or visual with aytomatic screenshort comparisson sound very promissing.
 
-Its helps the whole teem to be at the same page. Literraly. There is a page with components, a designer and a developer are looking at it at the same time and they are seeing the same thing. They both know what is implemented and how exactly it works.
+As a result the product is good, visualy consistent, clean coded. People used shared code and company libraries when they are easy to use.
+
+Its helps the whole teem to be at the same page. Literraly. There is a page with components, a designer and a developer are looking at it at the same time and they are seeing the same thing. They both know what is implemented and how exactly it works. Also helps for remote teams, we are trying it right away at our client's.
 
 And, our main goal, the style-guide-driven mindset is much closer. I would not say that we have solved this problem, because this is not about tools, this is about our culture. But with the tools we technically help as much as we can.
 
-## 19. Bridges the gap
-
-From this approach we already getting the better understanding between designers and developers. And in the development team itself.
-
-Our client uses remote teams as well and we see how it helps here.
-
-And the product is good, visualy consistent, clean coded. People used shared code and company libraries when they are easy to use.
-
-## 20. Developers mindset
+## 19. Developers mindset
 
 And the culture we are hoping to develop through this process is so that developers would consider interfaces not as pages but as modular systems.
 
