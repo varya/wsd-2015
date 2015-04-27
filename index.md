@@ -288,7 +288,7 @@ product
 ## Old school way
 
 * Inconsistent visual system
-* Inconsistent code (duplicant, unreasoned)
+* Inconsistent code (duplicate, unreasoned)
 * Version confusion
 * Time-consuming
 * <b>Unmaintainable</b>
@@ -302,7 +302,7 @@ product
 
 <!-- What we are actually developing -->
 > Websites are systems rather than pages and as soon as we
-> stop percerving them as that, the better.
+> stop perceiving them as that, the better.
 <figcaption>Anna Debenham</figcaption>
 
 <style>
@@ -473,7 +473,7 @@ or any other modular solution
 ## Living Style Guides
 
 A <b>living style guide</b> represents UI components of your website with exactly the same styles
-which you use across the project.
+that you use across the project.
 
 ## Style-Guide-Driven Development
 
@@ -586,7 +586,7 @@ development tasks.
 }
 </style>
 
-## Developers mindset
+## Developers' mindset
 {: .mindset }
 
 ###Before
