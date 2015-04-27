@@ -1,18 +1,14 @@
-# Driving the style-guide-driven development
+# Automating the style-guide-driven development
 
 ## 1. Cover
 
 Hello. This talk is going to be about the style-giude-driven development. Currently is it a highly recommended and popular practise.
-
-We actually can check this statement. How many of you develop the style-guides? And who wants?
 
 Particularly I will focus on automating this approach, on how we could delegate some aspects of this method to the robots and tools.
 
 ## 2. About me
 
 Before the style-guides, let me introduce myself. My name is Varya. I am a frontend developer originally from Russia and currently based in Helsinki, Finland.
-
-There is my twitter account here in the slide. If you have any question regarding the talk or another one, feel free to ask. We can meet in person after the talk. But if someone prefers twitter, go ahead.
 
 I work there for a pretty nice company called "SC5 Online". We are a consultancy company, mostly focused of front-end, preferably complex stuff. Nowadays, among other approaches we are brining the style-guide and user-interface-component practise to our client processes.
 
@@ -127,7 +123,7 @@ We wanted the tool to be easy to start. So, it is an npm package. You can instal
 
 If works for the popular syntaxes such as pure CSS, SASS and LESS. We do not know in advance what is used in the next project. So, the tool should work everythere.
 
-Our style guide generator extends anotehr one, KSS. It uses KSS as a dependant package. So, the documentation for the components goes in style files in KSS syntax. In general the idea of keeping the documentation close to code is nice and promises benefits. And KSS as a syntax became quite popular so we wanted for most of the project to e able to try our tool right away.
+Our style guide generator extends another one, KSS. It uses KSS as a dependant package. So, the documentation for the components goes in style files in KSS syntax. In general the idea of keeping the documentation close to code is nice and promises benefits. And KSS as a syntax became quite popular so we wanted for most of the project to e able to try our tool right away.
 
 It is gulp- and grunt- integrated out of box. This is very important for the style-guide-driven process to happend. Because no one would use additional command when developing. But if the style guilde website appears after you run your usual gulp command, this is completely different story.
 
