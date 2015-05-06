@@ -609,7 +609,7 @@ What modules is this page made of? Do I need to create new modules?<br/>
 Varya Stepanova, SC5 Online<br/>
 [@varya_en](https://twitter.com/varya_en){: .twitter }
 
-### [varya.me/empirejs-2015](http://varya.me/empirejs-2015/)
+### [varya.me/scotlandjs-2015](http://varya.me/scotlandjs-2015/)
 
 <style>
 .thanks h3 {
