@@ -43,8 +43,11 @@ style: |
         }
 ---
 
+# Сначала стайлгайд {#Cover}
 
-# Driving <nobr>Style-Guide-Driven</nobr> Development {#Cover}
+<div class="or">или</div>
+
+### как перейти на компонентный подход
 
 <div class="main-logo__wrapper">
     <object class="main-logo" data="themes/sc5/images/logo.min.svg#white" type="image/svg+xml"></object>
@@ -57,28 +60,42 @@ style: |
 #Cover h2 {
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
+#Cover .or {
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Gotham Rounded Medium',sans-serif;
+}
+#Cover h3 {
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Gotham Rounded Medium',sans-serif;
+}
 #Cover .credits,
 #Cover .credits a {
   color: #000;
 }
 </style>
 
-## Varya Stepanova
+## Варя Степанова
 {: .varya }
 
 <div class="photo"></div>
 
-Frontend developer at [SC5](http://sc5.io), Helsinki<br/>
+Разработчик интерфейсов в [SC5](http://sc5.io), Хельсинки<br/>
 [@varya_en](https://twitter.com/varya_en){: .twitter }
 
-Long-running projects, UI libraries,<br/>
+Долгоживущие проекты, библиотеки компонент,
 **style-guide-driven development**
 
 <style>
 .varya .photo {
   background-image:url('pictures/varya.jpg');
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   background-position: top right;
   border: #999 solid 5px;
@@ -128,23 +145,23 @@ About fly lady.
 
 </style>
 
-## Cleaning up the process
+## Улучшение процесса разработки
 {: .chapter }
 
-## Old school way
+## Метод старой школы
 {: .cycle }
 
 <div class="states">
 <div class="state state_left" markdown="1">
-mockup
+макет
 
 </div>
 <div class="state state_middle" markdown="1">
-markup
+вёрстка
 
 </div>
 <div class="state state_right">
-product
+продукт
 </div>
 </div>
 
@@ -210,24 +227,24 @@ product
 }
 </style>
 
-## Dash process
+## Процесс с потерями
 {: .dash-process }
 
-### In your dreams
-<div class="stage" style="width:200px">mockup</div>
-<div class="stage" style="width:200px">markup</div>
-<div class="stage">integration</div>
+### Хорошо бы чтобы оно так
+<div class="stage" style="width:200px">макет</div>
+<div class="stage" style="width:200px">вёрстка</div>
+<div class="stage">интеграция</div>
 
 <div class="next reality" markdown="1">
-### In reality
-<div class="stage" style="width:300px;">mockup</div>
-<div class="stage" style="margin-left: 50px">markup</div>
+### А оно так
+<div class="stage" style="width:300px;">макет</div>
+<div class="stage" style="margin-left: 50px">вёрстка</div>
 <div class="next">
-  <div class="stage stage_cross stage_invisible" style="position: absolute; left: 520px; top: 370px">markup</div>
-  <div class="stage" style="margin-left: 500px;width:150px">mockup</div>
-  <div class="stage" style="position: absolute; width: 175px">markup</div>
+  <div class="stage stage_cross stage_invisible" style="position: absolute; left: 520px; top: 370px">вёрстка</div>
+  <div class="stage" style="margin-left: 500px;width:150px">макет</div>
+  <div class="stage" style="position: absolute; width: 175px">вёрстка</div>
 <br/>
-...over and over again
+...снова и снова!
 
 </div>
 </div>
@@ -285,13 +302,13 @@ product
 }
 </style>
 
-## Old school way
+## Метод старой школы
 
-* Inconsistent visual system
-* Inconsistent code (duplicate, unreasoned)
-* Version confusion
-* Time-consuming
-* <b>Unmaintainable</b>
+* Визуальная неконсистентность
+* Неконсистентность в коде (копипаст, оверхед)
+* Путаница с версиями
+* Занимает много времени
+* <b>Сложно поддерживать</b>
 
 <!-- time conhard to edit/change/keep up-to-date)-->
 
@@ -327,17 +344,17 @@ product
 }
 </style>
 
-## Modular CSS architecture
+## Модульный CSS
 
 * OOCSS
 * SMACSS
 * BEM
 * Atomic design
 
-or any other modular solution
+или любое другое решение
 {: .note }
 
-## Modular CSS process
+## Процесс разрабоки с модульным CSS
 {: .component-cycle }
 
 <div class="components">
@@ -457,7 +474,7 @@ or any other modular solution
 
 </style>
 
-## Getting out of your comfort zone
+## Выход из зоны комфорта
 {: .challenge }
 
 <style>
@@ -470,14 +487,17 @@ or any other modular solution
 
 </style>
 
-## Living Style Guides
+## Живой стайлгайд
 
-A <b>living style guide</b> represents UI components of your website with exactly the same styles
-that you use across the project.
+<b>Живой стайлгайд</b> — это сайт с документацией, на котором компоненты отрисованы при помощи того
+же CSS, что используется в рабочем проекте.
 
-## Style-Guide-Driven Development
+## Разработка при помощи стайлгайда
 
-Style-Guide <s>can</s> must be an integral part of your development workflow.
+### style-guide-driven development
+{: .subtitle }
+
+Стайлгайд <s>можно</s> нужно вписать в процесс разработки.
 
 <b>Style-Guide-Driven Development</b> is the practice of using the style guide as the focal point for all front-end UI
 development tasks.
@@ -609,7 +629,7 @@ What modules is this page made of? Do I need to create new modules?<br/>
 Varya Stepanova, SC5 Online<br/>
 [@varya_en](https://twitter.com/varya_en){: .twitter }
 
-### [varya.me/scotlandjs-2015](http://varya.me/scotlandjs-2015/)
+### [varya.me/webstandardsdays-2015](http://varya.me/webstandardsdays-2015/)
 
 <style>
 .thanks h3 {
