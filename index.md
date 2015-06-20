@@ -85,10 +85,11 @@ style: |
 
 <div class="photo"></div>
 
-Разработчик интерфейсов в [SC5](http://sc5.io), Хельсинки<br/>
-[@varya_en](https://twitter.com/varya_en){: .twitter }
+Разработчик интерфейсов<br/>
+[SC5 Online](http://sc5.io), Хельсинки<br/>
+[@toivonens](https://twitter.com/toivonens){: .twitter }
 
-Долгоживущие проекты, библиотеки компонент,
+Долгоживущие проекты, библиотеки компонентов,
 **style-guide-driven development**
 
 <style>
@@ -230,13 +231,13 @@ About fly lady.
 ## Процесс с потерями
 {: .dash-process }
 
-### Хорошо бы чтобы оно так
+### Должно быть так
 <div class="stage" style="width:200px">макет</div>
 <div class="stage" style="width:200px">вёрстка</div>
 <div class="stage">интеграция</div>
 
 <div class="next reality" markdown="1">
-### А оно так
+### Но нет :-)
 <div class="stage" style="width:300px;">макет</div>
 <div class="stage" style="margin-left: 50px">вёрстка</div>
 <div class="next">
@@ -303,14 +304,67 @@ About fly lady.
 </style>
 
 ## Метод старой школы
+{: .old-school }
 
-* Визуальная неконсистентность
-* Неконсистентность в коде (копипаст, оверхед)
-* Путаница с версиями
+* Интерфейс неоднородный
+* Запутанный код
+* Маленькие изменения на самом деле большие
 * Занимает много времени
 * <b>Сложно поддерживать</b>
+{: .list }
+
+<div class="cycle"></div>
 
 <!-- time conhard to edit/change/keep up-to-date)-->
+
+<style>
+.old-school .cycle::before {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -400px;
+  content: "";
+  width: 800px;
+  height: 500px;
+  border-radius: 50%;
+  border: #31727d 5px solid;
+  display: inline-block;
+}
+.old-school .cycle::after {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -420px;
+  content: "";
+  width: 840px;
+  height: 520px;
+  display: inline-block;
+  background-image:
+    -webkit-radial-gradient(center center, ellipse cover, #31727d 0, #31727d 10px, transparent 10px),
+    -webkit-radial-gradient(center center, ellipse cover, #31727d 0, #31727d 10px, transparent 10px),
+    -webkit-radial-gradient(center center, ellipse cover, #31727d 0, #31727d 10px, transparent 10px);
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-position:
+    65px 100px,
+    800px 195px,
+    410px 485px;
+  background-size:
+    40px 40px,
+    40px 40px,
+    40px 40px;
+}
+
+.old-school .list {
+    margin-left: 100px;
+    background: white;
+    margin-top: 0;
+    padding-top: 40px;
+}
+</style>
 
 ## Websites are systems
 {: .anna}
@@ -318,9 +372,8 @@ About fly lady.
 <div class="photo"></div>
 
 <!-- What we are actually developing -->
-> Websites are systems rather than pages and as soon as we
-> stop perceiving them as that, the better.
-<figcaption>Anna Debenham</figcaption>
+> Сайты — это системы, а не страницы. И чем скорее мы перестанем считать их страницами, тем лучше.
+<figcaption>Анна Дебенхэм</figcaption>
 
 <style>
 .anna h2 {
@@ -499,70 +552,154 @@ About fly lady.
 
 Стайлгайд <s>можно</s> нужно вписать в процесс разработки.
 
-<b>Style-Guide-Driven Development</b> is the practice of using the style guide as the focal point for all front-end UI
-development tasks.
+<b>Сначала стайлгайд</b>: разрабатываем и фиксим в живом стайлгайде, а потом переносим в продукт.
 
-## The tool we missed
+## Инструмент
 {: .tool }
 
-[http://styleguide.sc5.io](http://styleguide.sc5.io)
+[styleguide.sc5.io](http://styleguide.sc5.io)
 
 <style>
 .tool {
-  font-size: 2em;
+  font-size: 4em;
 }
 </style>
 
-## Easy to start
+## Легко сделать стайлгайд
 
 * `npm install sc5-styleguide`
-* CSS / SCSS / SASS / LESS
-* Documentation in code, KSS-compatible
-* Gulp- / Grunt- integrated
+* CSS, SCSS, SASS, LESS
+* Совмстимо с Gulp и Grunt
+* Живой стайлгайд
+* Документация в коде, KSS-синтаксис
+* Шаблоны (AngularJS директивы)
 
-## Easy to keep up to date
+## Можно использовать для разработки
 
-* Living style guide
-* Documentation in code
-* Supports Angular directives
+* Следит за изменениями и обновляется
+* Показывает переменные компонента
+* Показывает компоненты переменных
+* Быстрое редактирование
 
-## Use as development playground
-
-* Watching and auto-refreshing
-* Related variables and styles
-* Variable-component mapping
-* Live editing
-
-## Cross-company style guide process
+## Наш опыт
 {: .cross-company }
 
-### 25% faster to develop something
-{: .subtitle }
 
-![](pictures/pattern-library-process.png){: .picture }
-
+<div class="library">
+библиотека компонентов
+  <div class="dev dev--1"></div>
+  <div class="dev dev--2"></div>
+  <div class="dev dev--3"></div>
+  <div class="dev dev--4"></div>
+  <div class="dev dev--5"></div>
+</div>
 
 <style>
+
 .cross-company {
-  text-align: center;
+  text-align:center;
 }
-.cross-company .picture {
-  height: 350px;
+
+.cross-company .library {
+  display: inline-block;
+  border-radius: 50%;
+  border: #666 5px solid;
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  position: relative;
 }
+
+.cross-company .dev {
+  display: block;
+  position: absolute;
+  background-color: red;
+  width: 150px;
+  height: 5px;
+  top: 50%;
+  left: 50%;
+  transform: rotate(20deg) translate(155px);
+  transform-origin: 0 0;
+}
+
+.cross-company .dev::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+  top: -17.5px;
+  left: 150px;
+  margin-left: -20px;
+  border: #666 1px solid;
+}
+
+.cross-company .dev--1 {
+  background-color: #31727d;
+}
+.cross-company .dev--1::before {
+  background-color: #31727d;
+  background: linear-gradient(30deg, #31727d 50%, #FFF 50%);
+}
+
+.cross-company .dev--2 {
+  transform: rotate(-30deg) translate(155px);
+  width: 120px;
+  background-color: #f16b66;
+}
+.cross-company .dev--2::before {
+  left: 120px;
+  background-color: #f16b66;
+  background: linear-gradient(45deg, #f16b66 50%, #FFF 50%);
+}
+
+.cross-company .dev--3 {
+  transform: rotate(-150deg) translate(155px);
+  background-color: #564c5b;
+}
+.cross-company .dev--3::before {
+  background-color: #564c5b;
+  background: linear-gradient(-20deg, #564c5b 50%, #FFF 50%);
+}
+
+.cross-company .dev--4 {
+  transform: rotate(100deg) translate(155px);
+  width: 90px;
+  background-color: #f16b66;
+}
+.cross-company .dev--4::before {
+  left: 90px;
+  background-color: #f16b66;
+  background: linear-gradient(120deg, #f16b66 50%, #FFF 50%);
+}
+
+.cross-company .dev--5 {
+  transform: rotate(160deg) translate(155px);
+  width: 190px;
+  background-color: #564c5b;
+}
+.cross-company .dev--5::before {
+  left: 190px;
+  background-color: #564c5b;
+  background: linear-gradient(-45deg, #564c5b 50%, #FFF 50%);
+}
+
 </style>
 
-## Style Guide Generator by SC5
+## Что нам дал SC5 Style Guide
 {: .benefits }
 
-* Living overview of UI
-* Quick manual testing
-* Quick built-out of new pages
-* Unit tests for UI
-* {: .unit-4 } Cross-company design consistency
-* Cross-team communication
-* Communication for remote teams
-* {: .unit-2 } Bridges the gap
-* {: .main } <b>"Style-guide-driven" mindset</b>
+* Живая документация компонентов
+* Быстрое тестирование
+* Юнит тесты для интерфейса
+* Быстрая разработка новых страниц
+* {: .unit-4 } Консистентный дизайн
+* Улучшает понимание в команде
+* Хорошо для удаленной работы
+* {: .unit-2 } Делаем одно дело
+* {: .main } <b>Разработка "сначала стайлгайд"</b>
 
 <style>
 .benefits ul {
@@ -606,16 +743,16 @@ development tasks.
 }
 </style>
 
-## Developers' mindset
+## Изменения в мозгу
 {: .mindset }
 
-###Before
+###До
 
-What markup, CSS and JS I need?
+Какой CSS и JS нужен?
 
-### After
-What modules is this page made of? Do I need to create new modules?<br/>
-**Future modules and pages start in style guide**.
+### После
+Какие модули нужны для этой страницы? Нужно ли сделать новые компоненты?<br/>
+**Новые компоненты разрабатываются в стайлгайде.**
 
 <style>
 .mindset h3 {
@@ -623,11 +760,11 @@ What modules is this page made of? Do I need to create new modules?<br/>
 }
 </style>
 
-## Thank you!
+## Спасибо!
 {: .thanks }
 
-Varya Stepanova, SC5 Online<br/>
-[@varya_en](https://twitter.com/varya_en){: .twitter }
+Варя Степанова, SC5 Online<br/>
+[@toivonens](https://twitter.com/toivonens){: .twitter }
 
 ### [varya.me/wsd-2015](http://varya.me/wsd-2015/)
 
